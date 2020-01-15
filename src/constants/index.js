@@ -1,3 +1,5 @@
+export const API_ENPOINT = 'http://localhost:3700';
+
 export const STATUSES = [
     {
         value: 0,
