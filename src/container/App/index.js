@@ -4,6 +4,8 @@ import { withStyles } from "@material-ui/core";
 import Taskboard from "./../Taskboard";
 import { Provider } from "react-redux";
 import configureStore from "../../redux/congifureStore";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const store = configureStore();
 
@@ -12,6 +14,7 @@ class App extends Component {
     return (
       <Provider store={store}>
         <div>
+          <ToastContainer />
           <Taskboard />
         </div>
       </Provider>

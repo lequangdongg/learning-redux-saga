@@ -59,6 +59,7 @@ class Taskboard extends Component {
     text = <TaskForm open={open} onClose={this.handleClose} />;
     return text;
   };
+
   render() {
     const { classes } = this.props;
     return (
@@ -71,6 +72,7 @@ class Taskboard extends Component {
         >
           <AddIcon /> Add new tasks
         </Button>
+
         {this.renderBoard()}
         {this.renderForm()}
       </div>
