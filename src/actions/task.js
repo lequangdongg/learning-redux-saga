@@ -25,17 +25,17 @@ export const fetchListTaskFail = error => {
   }
 }
 
-export const fetchListTaskRequest = () => {
-  return dispatch => {
-    dispatch(fetchListTask())
-    taskApis
-      .getList()
-      .then(res => {
-        const { data } = res;
-        dispatch(fetchListTaskSuccess(data));
-      })
-      .catch(error => {
-        dispatch(fetchListTaskFail(error))
-      });
-  };
-};
+// export const fetchListTaskRequest = () => {
+//   return dispatch => {
+//     dispatch(fetchListTask())
+//     taskApis
+//       .getList()
+//       .then(res => {
+//         const { data } = res;
+//         dispatch(fetchListTaskSuccess(data));
+//       })
+//       .catch(error => {
+//         dispatch(fetchListTaskFail(error))
+//       });
+//   };
+// };

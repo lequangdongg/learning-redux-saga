@@ -1,5 +1,5 @@
 import * as taskConstants from "./../constants/task";
-import {toastError} from './../helpers/toastHelper';
+import { toastError } from "./../helpers/toastHelper";
 const initialState = {
   listTask: []
 };
