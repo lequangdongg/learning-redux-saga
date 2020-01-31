@@ -13,11 +13,11 @@ import * as taskActions from "./../../actions/task";
 // import PropTypes from 'prop-types';
 
 class Taskboard extends Component {
-  // componentDidMount() {
-  //   const { taskActionCreator } = this.props;
-  //   const { fetchListTask } = taskActionCreator;
-  //   fetchListTask();
-  // }
+  componentDidMount() {
+    const { taskActionCreator } = this.props;
+    const { fetchListTask } = taskActionCreator;
+    fetchListTask();
+  }
 
   state = {
     open: false
@@ -60,17 +60,17 @@ class Taskboard extends Component {
     return text;
   };
 
-  loadData = () => {
-    const { taskActionCreator } = this.props;
-    const { fetchListTask } = taskActionCreator;
-    fetchListTask();
-  };
+  // loadData = () => {
+  //   const { taskActionCreator } = this.props;
+  //   const { fetchListTask } = taskActionCreator;
+  //   fetchListTask();
+  // };
 
   render() {
     const { classes } = this.props;
     return (
       <div className={classes.taskBoard}>
-        <Button
+        {/* <Button
           variant="contained"
           color="primary"
           className={classes.button}
@@ -80,7 +80,7 @@ class Taskboard extends Component {
           }}
         >
           Load Data
-        </Button>
+        </Button> */}
         <Button
           variant="contained"
           color="primary"

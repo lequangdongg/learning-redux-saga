@@ -1,11 +1,10 @@
-import * as taskApis from "./../apis/task";
-import * as taskConstants from './../constants/task';
+import * as taskConstants from "./../constants/task";
 
 export const fetchListTask = () => {
   return {
-    type: taskConstants.FETCH_TASK,
-  }
-}
+    type: taskConstants.FETCH_TASK
+  };
+};
 
 export const fetchListTaskSuccess = data => {
   return {
@@ -13,8 +12,8 @@ export const fetchListTaskSuccess = data => {
     payload: {
       data
     }
-  }
-}
+  };
+};
 
 export const fetchListTaskFail = error => {
   return {
@@ -22,8 +21,8 @@ export const fetchListTaskFail = error => {
     payload: {
       error
     }
-  }
-}
+  };
+};
 
 // export const fetchListTaskRequest = () => {
 //   return dispatch => {

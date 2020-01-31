@@ -18,6 +18,10 @@ class AxiosService {
   get(url){
     return this.instace.get(url);
   }
+
+  post(url,body){
+    return this.instace.post(url,body)
+  }
 }
 
 export default new AxiosService();
